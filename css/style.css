@@ -14,9 +14,10 @@ a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
+
 /* ==================== utility classes ================ */
 .flex {
     display: flex;
@@ -156,6 +157,124 @@ ul{
     padding: 0 15px;
     margin: 0 auto;
 }
+
+/* ============ responsive class ========= */
+.main-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav-background {
+    width: 100%;
+    height: 100%;
+    background: var(--light);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.nav-tigger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px;
+}
+
+.nav-tigger img {
+    width: 40px;
+    height: 40px;
+    background: var(--heaven);
+   border-radius: 3px;
+}
+
+.site-content-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--heaven);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.site-content-wrapper.scaled {
+    transform: scale(0.9) translateX(90%);
+    -webkit-transform: scale(0.9) translateX(90%);
+    border-radius: 3px;
+    box-shadow: 0 3px 10px 0 var(--secondary);
+}
+
+.site-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* =============== toggler button navigation at responsive view ================== */
+
+.nav-background .mobile-logo {
+    padding: 1rem;
+}
+
+.nav-background .cart {
+    margin-bottom: 2rem;
+}
+
+.nav-background .cart a {
+    color: var(--secondary);
+    font-family: 'Raleway-bold';
+}
+
+.nav-background .cart img {
+    margin-right: 0.75rem;
+    width: 20px;
+    height: 20px;
+}
+.nav-background .mobile-nav {
+    padding: 1rem;
+}
+
+.nav-background .mobile-nav ul li {
+    margin-bottom: 1rem;
+}
+
+.nav-background .mobile-nav ul li a {
+    color: var(--secondary);
+    font-family: 'Raleway-medium';
+}
+
+.nav-background .mobile-nav ul li a:hover {
+    color: var(--primary);
+}
+
+.nav-background .contact,
+.nav-background .time {
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.nav-background .contact img,
+.nav-background .time img {
+    margin-right: 1rem;
+}
+
+.nav-background .contact h5,
+.nav-background .time h5 {
+    font-family: 'Raleway-bold';
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.nav-background .contact h6,
+.nav-background .time h6 {
+    font-size: 0.75rem;
+}
+
+
 
 /* ============= header ================== */
 header.topbar {
@@ -534,45 +653,45 @@ section.latest-news .btn-wrapper {
 }
 
 /* ======================== section:7 subcribe =============== */
-section.subcribe .container > div:first-child img{
+section.subcribe .container>div:first-child img {
     width: 90%;
 }
 
-section.subcribe{
+section.subcribe {
     background: var(--primary);
 }
 
-section.subcribe h1{
+section.subcribe h1 {
     font-family: 'Raleway-bold';
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-section.subcribe p{
+section.subcribe p {
     font-family: 'Raleway-medium';
     font-size: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
 
-section.subcribe .input-wrap{
+section.subcribe .input-wrap {
     background: var(--heaven);
     padding: 0.3rem;
     border-radius: 4px;
 }
 
-section.subcribe .input-wrap input{
+section.subcribe .input-wrap input {
     width: 100%;
     border: none;
     padding: 0 1rem;
     font-size: 1rem;
 }
 
-section.subcribe .input-wrap input:focus{
+section.subcribe .input-wrap input:focus {
     outline: none;
 }
 
-section.subcribe .input-wrap button{
+section.subcribe .input-wrap button {
     padding: 0.8rem 2rem;
     border: none;
     background: var(--primary);
@@ -584,90 +703,94 @@ section.subcribe .input-wrap button{
     outline: none;
 }
 
-section.subcribe .input-wrap button:hover{
+section.subcribe .input-wrap button:hover {
     background: var(--secondary);
 }
 
 /* ======================== section:8 contact-us =============== */
-section.contact-us{
+section.contact-us {
     padding-top: 0;
     padding-bottom: 0;
 }
-section.contact-us .contact-info-wrapper{
+
+section.contact-us .contact-info-wrapper {
     padding: 4rem 0;
 }
 
-section.contact-us .contact-info > div > div {
+section.contact-us .contact-info>div>div {
     margin-bottom: 2rem;
 }
-section.contact-us .contact-info > div > div img{
+
+section.contact-us .contact-info>div>div img {
     margin-right: 1rem;
 }
 
-section.contact-us .contact-info > div > div > div {
+section.contact-us .contact-info>div>div>div {
     flex-direction: column;
 }
 
-section.contact-us .contact-info > div > div > div span:first-child{
+section.contact-us .contact-info>div>div>div span:first-child {
     font-family: 'Raleway-bold';
     margin-bottom: 0.25rem;
 }
 
 /* ======================== section:9 footer =============== */
-footer{
+footer {
     background: var(--footer);
     padding: 4rem 0;
 }
-footer .container{
+
+footer .container {
     color: var(--pure);
 }
 
-footer .box{
+footer .box {
     margin-right: 2rem;
 }
 
-footer .instagram-api img{
+footer .instagram-api img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-footer .instagram-api .post-wrapper{
+footer .instagram-api .post-wrapper {
     flex-wrap: wrap;
 }
 
-footer .instagram-api .post-wrapper > div {
-    width: calc(1/3*100% - (1 - 1/3)*10px);
+footer .instagram-api .post-wrapper>div {
     margin-bottom: 10px;
 }
 
-footer .box ul li a{
+footer .box ul li a {
     color: var(--pure);
     transition: all 0.3s ease;
 }
-footer .box ul li a:hover{
+
+footer .box ul li a:hover {
     color: var(--primary);
 }
-footer .box h3{
+
+footer .box h3 {
     border-bottom: 1px solid var(--primary);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
 
-footer .box p{
+footer .box p {
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 
-footer .box ul li{
+footer .box ul li {
     margin-bottom: 1rem;
 }
 
-footer .box:nth-child(3){
+footer .box:nth-child(3) {
     text-align: left;
 }
 
-footer .box:nth-child(3) > div img {
+footer .box:nth-child(3)>div img {
     margin-right: 1rem;
 }
 
@@ -676,13 +799,13 @@ footer .box:nth-child(3) ul li {
 }
 
 /* ======================== section:10 footer ===============  */
-footer.copyright{
-     padding: 1rem;
-     background: var(--secondary);
-     color: var(--pure);
-     font-size: 0.75rem;
+footer.copyright {
+    padding: 1rem;
+    background: var(--secondary);
+    color: var(--pure);
+    font-size: 0.75rem;
 }
 
-footer.copyright a{
+footer.copyright a {
     color: var(--primary);
 }
