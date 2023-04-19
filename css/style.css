@@ -188,7 +188,7 @@ ul {
 .nav-tigger img {
     width: 40px;
     height: 40px;
-    background: var(--heaven);
+    background: var(--light);
    border-radius: 3px;
 }
 
@@ -394,6 +394,7 @@ header.hero .hero-image {
     right: 40px;
 }
 
+
 /* ========== section 2 top products =========  */
 section {
     padding: 4rem 0;
@@ -448,10 +449,12 @@ section.top-products .food-slider .food-card button {
     background: var(--heaven);
     border: 2px solid var(--primary);
     border-radius: 4px;
-    width: 50%;
+    width: fit-content;
+    padding: 0 1rem 0 0;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    
 }
 
 section.top-products .food-slider .food-card button:hover {
