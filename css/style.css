@@ -8,6 +8,7 @@
 body {
     -webkit-font-smoothing: antialiased;
     font-family: "Raleway-regular";
+    overflow-x: hidden;
 }
 
 a {
@@ -152,7 +153,12 @@ ul {
     --footer: #2D333F;
 }
 
+.overflow-visible {
+    overflow-x: visible;
+}
+
 .container {
+    overflow-x: hidden;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -188,8 +194,8 @@ ul {
 .nav-tigger img {
     width: 40px;
     height: 40px;
-    background: var(--light);
-   border-radius: 3px;
+    /* background: var(--light); */
+    border-radius: 3px;
 }
 
 .site-content-wrapper {
@@ -234,6 +240,7 @@ ul {
     width: 20px;
     height: 20px;
 }
+
 .nav-background .mobile-nav {
     padding: 1rem;
 }
@@ -344,12 +351,19 @@ nav .navbar a:hover {
 
 /* ========== second header section ============ */
 
+header.hero .container-hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 header.hero {
     height: 600px;
     background-image: url(../images/hero.png);
     background-position: 0% 0%;
     background-repeat: no-repeat;
     overflow: hidden;
+}
 }
 
 header.hero .container {
@@ -454,7 +468,7 @@ section.top-products .food-slider .food-card button {
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    
+
 }
 
 section.top-products .food-slider .food-card button:hover {
