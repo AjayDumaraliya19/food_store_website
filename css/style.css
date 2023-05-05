@@ -153,12 +153,8 @@ ul {
     --footer: #2D333F;
 }
 
-.overflow-visible {
-    overflow-x: visible;
-}
-
 .container {
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -603,7 +599,6 @@ section.big-deal .timer {
 
 section.big-deal .timer div {
     margin-right: 2rem;
-    background: var(--primary);
     width: 150px;
     height: 150px;
     border-radius: 4px;

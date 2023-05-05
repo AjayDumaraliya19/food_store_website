@@ -1,6 +1,23 @@
+@media (max-width:1200px) {
+
+
+    /* ===================== big deal section 5 ============== */
+
+    section.big-deal .timer div {
+        background: var(--primary);
+    }
+}
+
 @media (min-width:1200px) {
     .container {
         max-width: 1152px;
+    }
+
+
+    /* ===================== big deal section 5 ============== */
+
+    section.big-deal .timer div {
+        background: var(--primary);
     }
 }
 
@@ -21,6 +38,7 @@
 @media (max-width:992px) {
     .container {
         max-width: 960px;
+
     }
 
     .nav-tigger {
@@ -99,11 +117,15 @@
         margin-bottom: 6rem;
     }
 
+
+
     /* ===================== footer section 9 ============== */
 
     footer .container {
         flex-direction: column;
     }
+
+    background: var(--primary);
 
     footer .box {
         text-align: left;
@@ -142,12 +164,23 @@
 
     /* ===================== big deal section 5 ============== */
 
-    section.big-deal .timer .tim {
-        margin-right: 0.50rem;
+    section.big-deal .timer div {
+        margin-right: 0 !important;
     }
 
     section.big-deal .container .timer {
         margin-right: -0.5rem;
+    }
+
+    section.big-deal .timer div {
+        background: transparent;
+    }
+    section.big-deal .timer div .res-bg {
+        font-size: 18px !important;
+        padding: 10px;
+        border-radius: 3px;
+        background: var(--primary);
+        margin-bottom: 15px;
     }
 
     /* ===================== subcribe section 7 ============== */
